@@ -1,0 +1,6 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8028: 中间目录(Debug\)包含从另一个项目(tutorial_1.vcxproj)共享的文件。   这会导致错误的清除和重新生成行为。
+  cell.cpp
+  main.cpp
+  Render.cpp
+  正在生成代码...
+LINK : fatal error LNK1104: 无法打开文件“freeglut.lib”
