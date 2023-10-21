@@ -1,3 +1,4 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8028: 中间目录(x64\Debug\)包含从另一个项目(tutorial_1.vcxproj)共享的文件。   这会导致错误的清除和重新生成行为。
-  Main.cpp
+  Logic.cpp
   tutorial_1.vcxproj -> C:\Users\AgnesTachyon\source\repos\tutorial_1\x64\Debug\Comp 426 A1.exe
+D:\vcpkg\vcpkg\scripts\buildsystems\msbuild\vcpkg.targets(228,5): warning : [vcpkg] Failed to gather app local DLL dependencies, program may not run. Set VcpkgApplocalDeps to false in your project file to suppress this warning. PowerShell arguments: -ExecutionPolicy Bypass -noprofile -File "D:\vcpkg\vcpkg\scripts\buildsystems\msbuild\applocal.ps1" "C:\Users\AgnesTachyon\source\repos\tutorial_1\x64\Debug\Comp 426 A1.exe" "D:\vcpkg\vcpkg\installed\x64-windows\debug\bin" "x64\Debug\Comp 426 A1.tlog\Comp 426 A1.write.1u.tlog" "x64\Debug\vcpkg.applocal.log"

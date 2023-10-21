@@ -13,4 +13,4 @@ void InitOrthoProjection(DisplaySize displaySize);
 void RegisterCallbacks();
 
 // main loop
-void MainLoop(int ms);
+void MainLoop();

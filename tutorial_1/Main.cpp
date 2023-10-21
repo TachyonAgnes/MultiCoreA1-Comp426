@@ -70,11 +70,16 @@ void RegisterCallbacks() {
 
 /// THREAD FUNCTIONS
 // Contains the main loop of the program where cells are updated every 33 milliseconds (1s/30).
-void MainLoop(int ms) {
+void MainLoop() {
 	while (true) {
-		Logic::GetInstance().UpdateAllCell(ms);
+		Logic::GetInstance().UpdateAllCell();
 		std::cout << "__MainLoopOnUpdate__" << std::endl;
 	}
+}
+
+void timer(int ms) {
+	glutPostRedisplay();  // redraw window
+	glutTimerFunc(ms, timer, 0);  // call timer function after 33 milliseconds
 }
 
 /// MAIN FUNCTION
@@ -96,12 +101,12 @@ int main(int argc, char **argv) {
 	glutMouseFunc(Logic::MedicineInjection);
 
 	/// Main Loop
-	std::thread t1(MainLoop, 33);
+	std::thread t1(MainLoop);
 	t1.detach();
 
 	/// Render loop
+	glutTimerFunc(33, timer, 0);
 	glutMainLoop();
-	
 
 	} catch (const std::exception &e) {
 		std::cerr << "Error: " << e.what() << std::endl;

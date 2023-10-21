@@ -14,7 +14,7 @@ class Logic {
 
 		// operate the cells
 		static void MedicineInjection(int button, int state, int x, int y);
-		void UpdateAllCell(unsigned short ms);
+		void UpdateAllCell();
 		void UpdateCell(Cell &currentCell, Cell &nextCell);
 };
 
